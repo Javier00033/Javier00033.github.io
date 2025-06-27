@@ -1,3 +1,3 @@
-title add _config.yml
-git commit -m "Agregar archivo de configuración"
-git push
+theme: jekyll-theme-minimal
+title: Javier G.M Portfolio
+description: My personal portfolio to have a record of my work and achivements 
