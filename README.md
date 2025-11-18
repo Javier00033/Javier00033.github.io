@@ -143,6 +143,6 @@ Este proyecto es de código abierto y está disponible para uso personal y comer
 
 ---
 
-**Última actualización:** Noviembre 2024
+**Última actualización:** Noviembre 2025
 **Versión:** 1.0.0
 **Autor:** Javier Gutiérrez Medina
