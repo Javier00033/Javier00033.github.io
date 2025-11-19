@@ -28,11 +28,15 @@
                     <span class="w-8 h-8"><img src="images/favicon.ico" alt="brainicon"></span>
                 </div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#inicio" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Inicio</a>
-                    <a href="#experiencia" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Experiencia</a>
-                    <a href="#proyectos" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Proyectos</a>
-                    <a href="#habilidades" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Habilidades</a>
-                    <a href="#contacto" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contacto</a>
+                    <a href="#inicio" class="text-gray-700 hover:text-blue-600 transition-colors font-medium" data-key="nav-home">Inicio</a>
+                    <a href="#experiencia" class="text-gray-700 hover:text-blue-600 transition-colors font-medium" data-key="nav-experience">Experiencia</a>
+                    <a href="#proyectos" class="text-gray-700 hover:text-blue-600 transition-colors font-medium" data-key="nav-projects">Proyectos</a>
+                    <a href="#habilidades" class="text-gray-700 hover:text-blue-600 transition-colors font-medium" data-key="nav-skills">Habilidades</a>
+                    <a href="#contacto" class="text-gray-700 hover:text-blue-600 transition-colors font-medium" data-key="nav-contact">Contacto</a>
+                </div>
+                <div class="language-switcher">
+                    <button id="lang-es" class="lang-btn active">ES</button>
+                    <button id="lang-en" class="lang-btn">EN</button>
                 </div>
                 <div class="md:hidden">
                     <button id="mobile-menu-btn" class="text-gray-700 hover:text-blue-600">
@@ -45,11 +49,11 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
             <div class="px-4 py-2 space-y-2">
-                <a href="#inicio" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors">Inicio</a>
-                <a href="#experiencia" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors">Experiencia</a>
-                <a href="#proyectos" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors">Proyectos</a>
-                <a href="#habilidades" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors">Habilidades</a>
-                <a href="#contacto" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors">Contacto</a>
+                <a href="#inicio" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors" data-key="nav-home">Inicio</a>
+                <a href="#experiencia" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors" data-key="nav-experience">Experiencia</a>
+                <a href="#proyectos" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors" data-key="nav-projects">Proyectos</a>
+                <a href="#habilidades" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors" data-key="nav-skills">Habilidades</a>
+                <a href="#contacto" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors" data-key="nav-contact">Contacto</a>
             </div>
         </div>
     </nav>
@@ -63,18 +67,18 @@
                         Javier Gutiérrez
                         <span class="block text-3xl lg:text-4xl font-normal opacity-90 mt-2">Medina</span>
                     </h1>
-                    <p class="text-xl lg:text-2xl mb-8 opacity-90 font-light">
+                    <p class="text-xl lg:text-2xl mb-8 opacity-90 font-light" data-key="hero-title">
                         Ingeniero en Telecomunicaciones y Electrónica
                     </p>
-                    <p class="text-lg mb-8 opacity-80 max-w-2xl">
+                    <p class="text-lg mb-8 opacity-80 max-w-2xl" data-key="hero-description">
                         Especialista en desarrollo web, sistemas embebidos y tecnologías modernas. 
                         Apasionado por crear soluciones innovadoras y eficientes.
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <a href="#contacto" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">
+                        <a href="#contacto" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg" data-key="hero-contact-btn">
                             Contactar
                         </a>
-                        <a href="#proyectos" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                        <a href="#proyectos" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors" data-key="hero-projects-btn">
                             Ver Proyectos
                         </a>
                     </div>
@@ -97,8 +101,8 @@
     <section id="experiencia" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Experiencia Profesional</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4" data-key="experience-title">Experiencia Profesional</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-key="experience-subtitle">
                     Trayectoria profesional en el desarrollo de soluciones tecnológicas y sistemas innovadores
                 </p>
             </div>
@@ -108,14 +112,14 @@
                 <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
                     <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
                         <div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Desarrollador de Odoo</h3>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2" data-key="experience-odoo-title">Desarrollador de Odoo</h3>
                             <p class="text-lg text-blue-600 font-semibold">Innova</p>
                         </div>
                         <div class="text-right">
                             <p class="text-sm text-gray-500 font-mono">Feb 23 – Mar 23, 2025</p>
                         </div>
                     </div>
-                    <p class="text-gray-700 leading-relaxed">
+                    <p class="text-gray-700 leading-relaxed" data-key="experience-odoo-description">
                         Proyecto a corto plazo con colegas de Innova, una pequeña empresa creada para satisfacer 
                         las necesidades específicas del mercado de programación y desarrollo en Cuba. Me contrataron 
                         para cubrir sus necesidades de desarrollo en la plataforma Odoo.
@@ -126,14 +130,14 @@
                 <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
                     <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
                         <div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Desarrollador Web Freelancer</h3>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2" data-key="experience-freelance-title">Desarrollador Web Freelancer</h3>
                             <p class="text-lg text-blue-600 font-semibold">Independiente</p>
                         </div>
                         <div class="text-right">
-                            <p class="text-sm text-gray-500 font-mono">Feb 2024 – Actualidad</p>
+                            <p class="text-sm text-gray-500 font-mono" data-key="experience-freelance-date">Feb 2024 – Actualidad</p>
                         </div>
                     </div>
-                    <p class="text-gray-700 leading-relaxed">
+                    <p class="text-gray-700 leading-relaxed" data-key="experience-freelance-description">
                         Como desarrollador independiente, he trabajado en proyectos de desarrollo web y proyectos 
                         personales para ampliar mis conocimientos. He desarrollado sitios web para clientes privados, 
                         garantizando la máxima profesionalidad y dedicación. Estos proyectos han sido realizados sobre 
@@ -151,8 +155,8 @@
     <section id="proyectos" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Proyectos Destacados</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4" data-key="projects-title">Proyectos Destacados</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-key="projects-subtitle">
                     Algunos de los proyectos más significativos en los que he trabajado
                 </p>
             </div>
@@ -164,9 +168,9 @@
                         <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
                             <i class="fas fa-video text-blue-600 text-xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900">Aplicación Gstreamer</h3>
+                        <h3 class="text-xl font-bold text-gray-900" data-key="project-gstreamer-title">Aplicación Gstreamer</h3>
                     </div>
-                    <p class="text-gray-700 mb-6 leading-relaxed">
+                    <p class="text-gray-700 mb-6 leading-relaxed" data-key="project-gstreamer-description">
                         Diseño de una aplicación para la gestión de plantillas y facilitar la transmisión multimedia 
                         mediante la plataforma Gstreamer. Utilicé Python y frameworks multimedia para crear una 
                         solución eficiente en tiempo real para la protección de video y reducción de costos en 
@@ -185,9 +189,9 @@
                         <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
                             <i class="fas fa-shopping-cart text-purple-600 text-xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900">Sistema Odoo Autopartes</h3>
+                        <h3 class="text-xl font-bold text-gray-900" data-key="project-odoo-title">Sistema Odoo Autopartes</h3>
                     </div>
-                    <p class="text-gray-700 mb-6 leading-relaxed">
+                    <p class="text-gray-700 mb-6 leading-relaxed" data-key="project-odoo-description">
                         Desarrollo y adaptación de una tienda en línea, almacenes, punto de venta, sitio web y otros 
                         complementos utilizando Odoo para un cliente privado llamado Autopartes. Implementé un sistema 
                         de administración y gestión confiable para su negocio.
@@ -208,8 +212,8 @@
     <section id="habilidades" class="py-20 bg-gradient-to-br from-blue-50 to-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Habilidades Técnicas</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4" data-key="skills-title">Habilidades Técnicas</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-key="skills-subtitle">
                     Tecnologías y herramientas con las que trabajo organizadas por nivel de experiencia
                 </p>
             </div>
@@ -219,7 +223,7 @@
             <div class="bg-white rounded-xl p-8 shadow-lg">
                 <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                     <i class="fas fa-code text-blue-600 mr-3"></i>
-                    Lenguajes de Programación
+                    <span data-key="skills-languages-title">Lenguajes de Programación</span>
                 </h3>
                 <div class="space-y-6">
                     <!-- C# -->
@@ -228,7 +232,7 @@
                             <span class="font-semibold text-gray-700">C#
                                 <span class="experience-badge">
                                     <i class="fas fa-star"></i>
-                                    Avanzado
+                                    <span data-key="skill-csharp-level">Avanzado</span>
                                 </span>
                             </span>
                         </div>
@@ -246,7 +250,7 @@
                             <span class="font-semibold text-gray-700">Python
                                 <span class="experience-badge">
                                     <i class="fas fa-star"></i>
-                                    Intermedio-Avanzado
+                                    <span data-key="skill-python-level">Intermedio-Avanzado</span>
                                 </span>
                             </span>
                         </div>
@@ -262,12 +266,12 @@
                             <span class="font-semibold text-gray-700">C++
                                 <span class="experience-badge">
                                     <i class="fas fa-star"></i>
-                                    Intermedio
+                                    <span data-key="skill-cpp-level">Intermedio</span>
                                 </span>
                             </span>
                         </div>
                         <div class="skill-tags">
-                            <span class="skill-tag">Sistemas Embebidos</span>
+                            <span class="skill-tag" data-key="skill-embedded">Sistemas Embebidos</span>
                             <span class="skill-tag">Arduino</span>
                             <span class="skill-tag">Raspberry Pi</span>
                         </div>
@@ -279,7 +283,7 @@
             <div class="bg-white rounded-xl p-8 shadow-lg">
                 <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                     <i class="fas fa-cogs text-green-600 mr-3"></i>
-                    Frameworks y Tecnologías
+                    <span data-key="skills-frameworks-title">Frameworks y Tecnologías</span>
                 </h3>
                 <div class="space-y-6">
                     <!-- .NET -->
@@ -288,7 +292,7 @@
                             <span class="font-semibold text-gray-700">.NET
                                 <span class="experience-badge">
                                     <i class="fas fa-star"></i>
-                                    Avanzado
+                                    <span data-key="skill-dotnet-level">Avanzado</span>
                                 </span>
                             </span>
                         </div>
@@ -304,14 +308,14 @@
                             <span class="font-semibold text-gray-700">Django
                                 <span class="experience-badge">
                                     <i class="fas fa-star"></i>
-                                    Intermedio-Avanzado
+                                    <span data-key="skill-django-level">Intermedio-Avanzado</span>
                                 </span>
                             </span>
                         </div>
                         <div class="skill-tags">
                             <span class="skill-tag">REST API</span>
                             <span class="skill-tag">ORM</span>
-                            <span class="skill-tag">Autenticación</span>
+                            <span class="skill-tag" data-key="skill-authentication">Autenticación</span>
                         </div>
                     </div>
                     
@@ -321,13 +325,13 @@
                             <span class="font-semibold text-gray-700">Odoo
                                 <span class="experience-badge">
                                     <i class="fas fa-star"></i>
-                                    Intermedio-Avanzado
+                                    <span data-key="skill-odoo-level">Intermedio-Avanzado</span>
                                 </span>
                             </span>
                         </div>
                         <div class="skill-tags">
                             <span class="skill-tag">ERP</span>
-                            <span class="skill-tag">Módulos Personalizados</span>
+                            <span class="skill-tag" data-key="skill-custom-modules">Módulos Personalizados</span>
                             <span class="skill-tag">E-commerce</span>
                         </div>
                     </div>
@@ -339,28 +343,28 @@
         <div class="mt-12 bg-white rounded-xl p-8 shadow-lg">
             <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center flex items-center justify-center">
                 <i class="fas fa-users text-purple-600 mr-3"></i>
-                Fortalezas Personales
+                <span data-key="soft-skills-title">Fortalezas Personales</span>
             </h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="text-center p-4 bg-gray-50 rounded-lg">
                     <i class="fas fa-dumbbell text-3xl text-blue-600 mb-3"></i>
-                    <h4 class="font-semibold text-gray-900 mb-2">Esforzado</h4>
-                    <p class="text-sm text-gray-600">Comprometido con la excelencia</p>
+                    <h4 class="font-semibold text-gray-900 mb-2" data-key="soft-skill-hardworking">Esforzado</h4>
+                    <p class="text-sm text-gray-600" data-key="soft-skill-hardworking-desc">Comprometido con la excelencia</p>
                 </div>
                 <div class="text-center p-4 bg-gray-50 rounded-lg">
                     <i class="fas fa-puzzle-piece text-3xl text-green-600 mb-3"></i>
-                    <h4 class="font-semibold text-gray-900 mb-2">Solución de Problemas</h4>
-                    <p class="text-sm text-gray-600">Análisis y resolución eficiente</p>
+                    <h4 class="font-semibold text-gray-900 mb-2" data-key="soft-skill-problem-solving">Solución de Problemas</h4>
+                    <p class="text-sm text-gray-600" data-key="soft-skill-problem-solving-desc">Análisis y resolución eficiente</p>
                 </div>
                 <div class="text-center p-4 bg-gray-50 rounded-lg">
                     <i class="fas fa-lightbulb text-3xl text-yellow-600 mb-3"></i>
-                    <h4 class="font-semibold text-gray-900 mb-2">Creatividad</h4>
-                    <p class="text-sm text-gray-600">Innovación en soluciones</p>
+                    <h4 class="font-semibold text-gray-900 mb-2" data-key="soft-skill-creativity">Creatividad</h4>
+                    <p class="text-sm text-gray-600" data-key="soft-skill-creativity-desc">Innovación en soluciones</p>
                 </div>
                 <div class="text-center p-4 bg-gray-50 rounded-lg">
                     <i class="fas fa-handshake text-3xl text-purple-600 mb-3"></i>
-                    <h4 class="font-semibold text-gray-900 mb-2">Trabajo en Equipo</h4>
-                    <p class="text-sm text-gray-600">Colaboración efectiva</p>
+                    <h4 class="font-semibold text-gray-900 mb-2" data-key="soft-skill-teamwork">Trabajo en Equipo</h4>
+                    <p class="text-sm text-gray-600" data-key="soft-skill-teamwork-desc">Colaboración efectiva</p>
                 </div>
             </div>
         </div>
@@ -372,8 +376,8 @@
     <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Educación</h2>
-                <p class="text-xl text-gray-600">Formación académica y desarrollo continuo</p>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4" data-key="education-title">Educación</h2>
+                <p class="text-xl text-gray-600" data-key="education-subtitle">Formación académica y desarrollo continuo</p>
             </div>
             
             <div class="max-w-4xl mx-auto">
@@ -388,10 +392,10 @@
                                 <i class="fas fa-graduation-cap"></i>
                             </div>
                             <div class="ml-8 bg-gray-50 rounded-lg p-6 flex-1">
-                                <h3 class="text-xl font-bold text-gray-900 mb-2">Ingeniería en Telecomunicaciones y Electrónica</h3>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2" data-key="education-degree">Ingeniería en Telecomunicaciones y Electrónica</h3>
                                 <p class="text-blue-600 font-semibold mb-2">Universidad Tecnológica de la Habana "José Antonio Echevarría" (CUJAE)</p>
                                 <p class="text-sm text-gray-500 mb-3">Sept 2019 – Jul 2024</p>
-                                <p class="text-gray-700">Trabajo de Tesis: "Diseño e implementación de un sistema de plantillas para Sistemas Multimedia basadas en Gstreamer"</p>
+                                <p class="text-gray-700" data-key="education-thesis">Trabajo de Tesis: "Diseño e implementación de un sistema de plantillas para Sistemas Multimedia basadas en Gstreamer"</p>
                             </div>
                         </div>
                         
@@ -400,7 +404,7 @@
                                 <i class="fas fa-school"></i>
                             </div>
                             <div class="ml-8 bg-gray-50 rounded-lg p-6 flex-1">
-                                <h3 class="text-xl font-bold text-gray-900 mb-2">Pre-universitario</h3>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2" data-key="education-highschool">Pre-universitario</h3>
                                 <p class="text-green-600 font-semibold mb-2">IPVCE "Mártires de Humboldt 7"</p>
                                 <p class="text-sm text-gray-500">Sept 2015 – May 2018</p>
                             </div>
@@ -411,7 +415,7 @@
                                 <i class="fas fa-book"></i>
                             </div>
                             <div class="ml-8 bg-gray-50 rounded-lg p-6 flex-1">
-                                <h3 class="text-xl font-bold text-gray-900 mb-2">Secundaria</h3>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2" data-key="education-secondary">Secundaria</h3>
                                 <p class="text-purple-600 font-semibold mb-2">ESBU "Coronel Juan Delgado"</p>
                                 <p class="text-sm text-gray-500">Sept 2012 – Jun 2015</p>
                             </div>
@@ -426,15 +430,15 @@
     <section id="contacto" class="py-20 bg-gradient-to-tr from-gray-900 via-blue-900 to-gray-900 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">Contacto</h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                    ¿Interesado en trabajar juntos? No dudes en contactarme
+                <h2 class="text-4xl font-bold mb-4" data-key="contact-title">Contacto</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto" data-key="contact-subtitle">
+                    ¿Interesado en contratarme? No dudes en contactarme
                 </p>
             </div>
             
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h3 class="text-2xl font-bold mb-6">Información de Contacto</h3>
+                    <h3 class="text-2xl font-bold mb-6" data-key="contact-info-title">Información de Contacto</h3>
                     <div class="space-y-4">
                         <div class="flex items-center">
                             <i class="fas fa-envelope text-blue-400 text-xl mr-4"></i>
@@ -455,7 +459,7 @@
                     </div>
                     
                     <div class="mt-8">
-                        <h4 class="text-lg font-semibold mb-4">Redes Sociales</h4>
+                        <h4 class="text-lg font-semibold mb-4" data-key="contact-social-title">Redes Sociales</h4>
                         <div class="flex space-x-4">
                             <a href="https://linkedin.com/in/javier-gutiérrez-medina-6968b6327" target="_blank" class="bg-blue-600 hover:bg-blue-700 p-3 rounded-lg transition-colors">
                                 <i class="fab fa-linkedin text-xl"></i>
@@ -471,11 +475,11 @@
                 </div>
                 
                 <div class="bg-gray-900 rounded-xl p-8">
-                    <h3 class="text-2xl font-bold mb-6">Filosofía de Vida</h3>
-                    <blockquote class="text-2xl font-light italic text-center text-gray-300 mb-6">
+                    <h3 class="text-2xl font-bold mb-6" data-key="philosophy-title">Filosofía de Vida</h3>
+                    <blockquote class="text-2xl font-light italic text-center text-gray-300 mb-6" data-key="philosophy-quote">
                         "Siempre sigue creciendo"
                     </blockquote>
-                    <p class="text-gray-400 text-center">
+                    <p class="text-gray-400 text-center" data-key="philosophy-description">
                         Esta filosofía guía mi desarrollo personal y profesional, 
                         buscando constantemente mejorar y aprender cada día.
                     </p>
@@ -483,9 +487,9 @@
                     <div class="mt-8 text-center">
                         <div class="inline-flex items-center space-x-2 text-green-400">
                             <i class="fas fa-award text-2xl"></i>
-                            <span class="font-semibold">Graduado de Ingeniería</span>
+                            <span class="font-semibold" data-key="philosophy-graduate">Graduado de Ingeniería</span>
                         </div>
-                        <p class="text-sm text-gray-400 mt-2">
+                        <p class="text-sm text-gray-400 mt-2" data-key="philosophy-graduate-desc">
                             Orgullo personal y prueba de carácter y personalidad
                         </p>
                     </div>
@@ -498,7 +502,7 @@
     <footer class="bg-gray-900 text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-                <p class="text-gray-400">
+                <p class="text-gray-400" data-key="footer-copyright">
                     © 2025 Javier Gutiérrez Medina. Todos los derechos reservados.
                 </p>
             </div>
@@ -530,6 +534,170 @@
             });
         });
         
+        // Language switching functionality
+        const translations = {
+            'es': {
+                'nav-home': 'Inicio',
+                'nav-experience': 'Experiencia',
+                'nav-projects': 'Proyectos',
+                'nav-skills': 'Habilidades',
+                'nav-contact': 'Contacto',
+                'hero-title': 'Ingeniero en Telecomunicaciones y Electrónica',
+                'hero-description': 'Especialista en desarrollo web, sistemas embebidos y tecnologías modernas. Apasionado por crear soluciones innovadoras y eficientes.',
+                'hero-contact-btn': 'Contactar',
+                'hero-projects-btn': 'Ver Proyectos',
+                'experience-title': 'Experiencia Profesional',
+                'experience-subtitle': 'Trayectoria profesional en el desarrollo de soluciones tecnológicas y sistemas innovadores',
+                'experience-odoo-title': 'Desarrollador de Odoo',
+                'experience-odoo-description': 'Proyecto a corto plazo con colegas de Innova, una pequeña empresa creada para satisfacer las necesidades específicas del mercado de programación y desarrollo en Cuba. Me contrataron para cubrir sus necesidades de desarrollo en la plataforma Odoo.',
+                'experience-freelance-title': 'Desarrollador Web Freelancer',
+                'experience-freelance-date': 'Feb 2024 – Actualidad',
+                'experience-freelance-description': 'Como desarrollador independiente, he trabajado en proyectos de desarrollo web y proyectos personales para ampliar mis conocimientos. He desarrollado sitios web para clientes privados, garantizando la máxima profesionalidad y dedicación. Estos proyectos han sido realizados sobre tecnologías como Django y .Net principalmente, en este último realizando aplicaciones MVC y también aplicaciones WebCore empleando C#.',
+                'projects-title': 'Proyectos Destacados',
+                'projects-subtitle': 'Algunos de los proyectos más significativos en los que he trabajado',
+                'project-gstreamer-title': 'Aplicación Gstreamer',
+                'project-gstreamer-description': 'Diseño de una aplicación para la gestión de plantillas y facilitar la transmisión multimedia mediante la plataforma Gstreamer. Utilicé Python y frameworks multimedia para crear una solución eficiente en tiempo real para la protección de video y reducción de costos en videovigilancia con Raspberry Pi 3.',
+                'project-odoo-title': 'Sistema Odoo Autopartes',
+                'project-odoo-description': 'Desarrollo y adaptación de una tienda en línea, almacenes, punto de venta, sitio web y otros complementos utilizando Odoo para un cliente privado llamado Autopartes. Implementé un sistema de administración y gestión confiable para su negocio.',
+                'skills-title': 'Habilidades Técnicas',
+                'skills-subtitle': 'Tecnologías y herramientas con las que trabajo organizadas por nivel de experiencia',
+                'skills-languages-title': 'Lenguajes de Programación',
+                'skills-frameworks-title': 'Frameworks y Tecnologías',
+                'skill-csharp-level': 'Avanzado',
+                'skill-python-level': 'Intermedio-Avanzado',
+                'skill-cpp-level': 'Intermedio',
+                'skill-dotnet-level': 'Avanzado',
+                'skill-django-level': 'Intermedio-Avanzado',
+                'skill-odoo-level': 'Intermedio-Avanzado',
+                'skill-embedded': 'Sistemas Embebidos',
+                'skill-authentication': 'Autenticación',
+                'skill-custom-modules': 'Módulos Personalizados',
+                'soft-skills-title': 'Fortalezas Personales',
+                'soft-skill-hardworking': 'Esforzado',
+                'soft-skill-hardworking-desc': 'Comprometido con la excelencia',
+                'soft-skill-problem-solving': 'Solución de Problemas',
+                'soft-skill-problem-solving-desc': 'Análisis y resolución eficiente',
+                'soft-skill-creativity': 'Creatividad',
+                'soft-skill-creativity-desc': 'Innovación en soluciones',
+                'soft-skill-teamwork': 'Trabajo en Equipo',
+                'soft-skill-teamwork-desc': 'Colaboración efectiva',
+                'education-title': 'Educación',
+                'education-subtitle': 'Formación académica y desarrollo continuo',
+                'education-degree': 'Ingeniería en Telecomunicaciones y Electrónica',
+                'education-thesis': 'Trabajo de Tesis: "Diseño e implementación de un sistema de plantillas para Sistemas Multimedia basadas en Gstreamer"',
+                'education-highschool': 'Pre-universitario',
+                'education-secondary': 'Secundaria',
+                'contact-title': 'Contacto',
+                'contact-subtitle': '¿Interesado en trabajar juntos? No dudes en contactarme',
+                'contact-info-title': 'Información de Contacto',
+                'contact-social-title': 'Redes Sociales',
+                'philosophy-title': 'Filosofía de Vida',
+                'philosophy-quote': '"Siempre sigue creciendo"',
+                'philosophy-description': 'Esta filosofía guía mi desarrollo personal y profesional, buscando constantemente mejorar y aprender cada día.',
+                'philosophy-graduate': 'Graduado de Ingeniería',
+                'philosophy-graduate-desc': 'Orgullo personal y prueba de carácter y personalidad',
+                'footer-copyright': '© 2025 Javier Gutiérrez Medina. Todos los derechos reservados.'
+            },
+            'en': {
+                'nav-home': 'Home',
+                'nav-experience': 'Experience',
+                'nav-projects': 'Projects',
+                'nav-skills': 'Skills',
+                'nav-contact': 'Contact',
+                'hero-title': 'Telecommunications and Electronics Engineer',
+                'hero-description': 'Specialist in web development, embedded systems and modern technologies. Passionate about creating innovative and efficient solutions.',
+                'hero-contact-btn': 'Contact Me',
+                'hero-projects-btn': 'View Projects',
+                'experience-title': 'Professional Experience',
+                'experience-subtitle': 'Professional trajectory in the development of technological solutions and innovative systems',
+                'experience-odoo-title': 'Odoo Developer',
+                'experience-odoo-description': 'Short-term project with colleagues from Innova, a small company created to meet the specific needs of the programming and development market in Cuba. I was hired to cover their development needs on the Odoo platform.',
+                'experience-freelance-title': 'Freelance Web Developer',
+                'experience-freelance-date': 'Feb 2024 – Present',
+                'experience-freelance-description': 'As an independent developer, I have worked on web development projects and personal projects to expand my knowledge. I have developed websites for private clients, ensuring maximum professionalism and dedication. These projects have been carried out on technologies such as Django and .Net mainly, in the latter developing MVC applications and also WebCore applications using C#.',
+                'projects-title': 'Featured Projects',
+                'projects-subtitle': 'Some of the most significant projects I have worked on',
+                'project-gstreamer-title': 'Gstreamer Application',
+                'project-gstreamer-description': 'Design of an application for template management and facilitating multimedia streaming using the Gstreamer platform. I used Python and multimedia frameworks to create an efficient real-time solution for video protection and cost reduction in video surveillance with Raspberry Pi 3.',
+                'project-odoo-title': 'Odoo Auto Parts System',
+                'project-odoo-description': 'Development and adaptation of an online store, warehouses, point of sale, website and other add-ons using Odoo for a private client called Auto Parts. I implemented a reliable administration and management system for their business.',
+                'skills-title': 'Technical Skills',
+                'skills-subtitle': 'Technologies and tools I work with organized by experience level',
+                'skills-languages-title': 'Programming Languages',
+                'skills-frameworks-title': 'Frameworks and Technologies',
+                'skill-csharp-level': 'Advanced',
+                'skill-python-level': 'Intermediate-Advanced',
+                'skill-cpp-level': 'Intermediate',
+                'skill-dotnet-level': 'Advanced',
+                'skill-django-level': 'Intermediate-Advanced',
+                'skill-odoo-level': 'Intermediate-Advanced',
+                'skill-embedded': 'Embedded Systems',
+                'skill-authentication': 'Authentication',
+                'skill-custom-modules': 'Custom Modules',
+                'soft-skills-title': 'Personal Strengths',
+                'soft-skill-hardworking': 'Hardworking',
+                'soft-skill-hardworking-desc': 'Committed to excellence',
+                'soft-skill-problem-solving': 'Problem Solving',
+                'soft-skill-problem-solving-desc': 'Efficient analysis and resolution',
+                'soft-skill-creativity': 'Creativity',
+                'soft-skill-creativity-desc': 'Innovation in solutions',
+                'soft-skill-teamwork': 'Teamwork',
+                'soft-skill-teamwork-desc': 'Effective collaboration',
+                'education-title': 'Education',
+                'education-subtitle': 'Academic training and continuous development',
+                'education-degree': 'Telecommunications and Electronics Engineering',
+                'education-thesis': 'Thesis: "Design and implementation of a template system for Multimedia Systems based on Gstreamer"',
+                'education-highschool': 'Pre-university',
+                'education-secondary': 'Secondary School',
+                'contact-title': 'Contact',
+                'contact-subtitle': 'Interested in working together? Don\'t hesitate to contact me',
+                'contact-info-title': 'Contact Information',
+                'contact-social-title': 'Social Networks',
+                'philosophy-title': 'Life Philosophy',
+                'philosophy-quote': '"Always keep growing"',
+                'philosophy-description': 'This philosophy guides my personal and professional development, constantly seeking to improve and learn every day.',
+                'philosophy-graduate': 'Engineering Graduate',
+                'philosophy-graduate-desc': 'Personal pride and proof of character and personality',
+                'footer-copyright': '© 2025 Javier Gutiérrez Medina. All rights reserved.'
+            }
+        };
+
+        document.getElementById('lang-es').addEventListener('click', () => {
+            changeLanguage('es');
+        });
+
+        document.getElementById('lang-en').addEventListener('click', () => {
+            changeLanguage('en');
+        });
+
+        function changeLanguage(lang) {
+            // Cambiar atributo lang del HTML
+            document.documentElement.lang = lang;
+            
+            // Actualizar textos
+            Object.keys(translations[lang]).forEach(key => {
+                const elements = document.querySelectorAll(`[data-key="${key}"]`);
+                elements.forEach(el => {
+                    el.textContent = translations[lang][key];
+                });
+            });
+            
+            // Actualizar botones activos
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector(`#lang-${lang}`).classList.add('active');
+            
+            // Actualizar meta description y title
+            if (lang === 'es') {
+                document.title = 'Javier Gutiérrez Medina - Ingeniero Telecomunicaciones';
+                document.querySelector('meta[name="description"]').setAttribute('content', 'Portafolio profesional de Javier Gutiérrez Medina, Ingeniero en Telecomunicaciones y Electrónica con experiencia en desarrollo web, sistemas embebidos y tecnologías modernas.');
+            } else {
+                document.title = 'Javier Gutiérrez Medina - Telecommunications Engineer';
+                document.querySelector('meta[name="description"]').setAttribute('content', 'Professional portfolio of Javier Gutiérrez Medina, Telecommunications and Electronics Engineer with experience in web development, embedded systems and modern technologies.');
+            }
+        }
+
         // Animate skill bars on scroll
         const observerOptions = {
             threshold: 0.5,
