@@ -11,6 +11,7 @@ Portafolio web profesional desarrollado para Javier Gutiérrez Medina, Ingeniero
 - ✅ **SEO Optimizado** - Mejores prácticas de SEO implementadas
 - ✅ **Accesibilidad** - Cumple con estándares de accesibilidad
 - ✅ **Animaciones Suaves** - Interacciones fluidas y modernas
+- ✅ **Lenguajes** - UI en inglés y español
 - ✅ **Navegación Intuitiva** - Experiencia de usuario superior
 
 ## Tecnologías Utilizadas
